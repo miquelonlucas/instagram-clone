@@ -50,6 +50,8 @@ table {
 
 /* CSS for the instagram */
 
+/* 1st media is min-width 900px */
+
 
 
 #header {
@@ -63,7 +65,7 @@ table {
 }
 
 #icon {
-    margin-left: 216.37px;
+    /* margin-left: 216.37px; */
     font-size: 19.25px;
     margin-top: 4px;
 }
@@ -101,7 +103,7 @@ table {
 }
 
 #paper-plane{
-    margin-left: 214.06px;
+    margin-left: calc(10vw - 40px);
     width: 17.87px;
     height: auto;
 }
@@ -124,8 +126,12 @@ table {
     height: auto;
 }
 
+#stories-feed, #icon, #entry{
+    margin-left: calc(20px + 10vw);
+}
+
 #stories-feed{
-    width: 80%;
+    width: 614px;
     height: 118px;
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -133,6 +139,7 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-left: calc(20px + 10vw);
 }
 
 #stories-feed img{
@@ -155,5 +162,20 @@ table {
     justify-content: center;
     align-items: center;
     margin: 0 0 0 14px;
-    position: relative;
+    /* position: relative; */
+}
+
+#main-user{
+    padding-left: 20px;
+}
+
+#user2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#entry-icon img{
+    width: 32px;
+    height: auto;
 }
